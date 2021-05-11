@@ -1,0 +1,62 @@
+SERVER PING [OK] WIN-U9ESO6DOFR2
+
+STOPPING SERVICES IN PROGRESS...
+WARNING: Waiting for service 'SQL Server (PRIMARYSRV) (MSSQL$PRIMARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (PRIMARYSRV) (MSSQL$PRIMARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (SECONDARYSRV) (MSSQL$SECONDARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (SECONDARYSRV) (MSSQL$SECONDARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (SECONDARYSRV) (MSSQL$SECONDARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (SECONDARYSRV) (MSSQL$SECONDARYSRV)' to stop...
+WARNING: Waiting for service 'SQL Server (TEST) (MSSQL$TEST)' to stop...
+WARNING: Waiting for service 'SQL Server (TEST) (MSSQL$TEST)' to stop...
+WARNING: Waiting for service 'SQL Server (TEST) (MSSQL$TEST)' to stop...
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  MSSQL$PRIMARYSRV   SQL Server (PRIMARYSRV)               
+Stopped  MSSQL$SECONDARYSRV SQL Server (SECONDARYSRV)             
+Stopped  MSSQL$TEST         SQL Server (TEST)                     
+Stopped  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Stopped  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Stopped  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Stopped  SQLAgent$PRIMAR... SQL Server Agent (PRIMARYSRV)         
+Stopped  SQLAgent$SECOND... SQL Server Agent (SECONDARYSRV)       
+Stopped  SQLAgent$TEST      SQL Server Agent (TEST)               
+Stopped  SQLBrowser         SQL Server Browser                    
+
+
+REPORT SUMMARY
+
+TOTAL SERVERS COUNT  1
+PING [OK] SERVERS  1
+PING [NOT OK] SERVERS  0
+====================================================================================================
+SERVER PING [OK] WIN-U9ESO6DOFR2
+ 
+STARTING SERVICES IN PROGRESS...
+[WIN-U9ESO6DOFR2] Connecting to remote server WIN-U9ESO6DOFR2 failed with the following error message : The client cannot connect to the destination specified in the 
+request. Verify that the service on the destination is running and is accepting requests. Consult the logs and documentation for the WS-Management service running on 
+the destination, most commonly IIS or WinRM. If the destination is the WinRM service, run the following command on the destination to analyze and configure the WinRM 
+service: "winrm quickconfig". For more information, see the about_Remote_Troubleshooting Help topic.
+    + CategoryInfo          : OpenError: (WIN-U9ESO6DOFR2:String) [], PSRemotingTransportException
+    + FullyQualifiedErrorId : CannotConnect,PSSessionStateBroken
+DB PING [NOT OK]
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  MSSQL$PRIMARYSRV   SQL Server (PRIMARYSRV)               
+Running  MSSQL$SECONDARYSRV SQL Server (SECONDARYSRV)             
+Running  MSSQL$TEST         SQL Server (TEST)                     
+Running  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Running  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Running  MSSQLFDLauncher... SQL Full-text Filter Daemon Launche...
+Running  SQLAgent$PRIMAR... SQL Server Agent (PRIMARYSRV)         
+Running  SQLAgent$SECOND... SQL Server Agent (SECONDARYSRV)       
+Running  SQLAgent$TEST      SQL Server Agent (TEST)               
+Running  SQLBrowser         SQL Server Browser                    
+
+REPORT SUMMARY
+
+TOTAL SERVERS COUNT  1
+PING [OK] SERVERS  1
+PING [NOT OK] SERVERS  0

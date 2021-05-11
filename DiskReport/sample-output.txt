@@ -1,0 +1,3 @@
+Enter Instance names by using comma separator or input text file with multiple Instance details.
+Output file should be under c:\Temp\ folder
+Enter Instance list or input txt file path: 
