@@ -1,0 +1,39 @@
+BACKUP JOB>>  [abc]
+BACKUP JOB>>  [LogTest]
+BACKUP JOB>>  [Northwind]
+BACKUP JOB>>  [restoredb]
+BACKUP JOB>>  [TEST_DB]
+BACKUP JOB>>  [Venkat]
+COPY JOB >>  abc_FULL_20210511_233026.bak
+COPY JOB >>  LogTest_FULL_20210511_233026.bak
+COPY JOB >>  Northwind_FULL_20210511_233026.bak
+COPY JOB >>  restoredb_FULL_20210511_233026.bak
+COPY JOB >>  TEST_DB_FULL_20210511_233026.bak
+COPY JOB >>  Venkat_FULL_20210511_233027.bak
+RESTORE JOB >>  abc
+RESTORE JOB >>  LogTest
+RESTORE JOB >>  Northwind
+RESTORE JOB >>  restoredb
+RESTORE JOB >>  TEST_DB
+RESTORE JOB >>  Venkat
+##############################
+DBS Check after migration 
+
+name          file_id type_desc physical_name                                                                            
+----          ------- --------- -------------                                                                            
+Northwind           1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATANorthwind.mdf    
+Northwind_log       2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATANorthwind_log.ldf
+pubs                1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATATEST_DB.mdf      
+pubs_log            2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATATEST_DB_log.ldf  
+abc                 1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATAabc.mdf          
+abc_log             2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATAabc_log.ldf      
+LogTest             1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATALogTest.mdf      
+LogTest_log         2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATALogTest_log.ldf  
+LogTest3            4 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATALogTest_ndf2.ndf 
+LogTest4            5 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATALogTest_ndf3.ndf 
+LogTest5            6 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATALogTest_ndf4.ndf 
+restoredb           1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATArestoredb.mdf    
+restoredb_log       2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATArestoredb_log.ldf
+Venkat              1 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATAVenkat.mdf       
+Venkat_log          2 LOG       C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATAVenkat_log.ldf   
+Venkat1             3 ROWS      C:\Program Files\Microsoft SQL Server\MSSQL10_50.SECONDARYSRV\MSSQL\DATAVenkat_ndf1.ndf
